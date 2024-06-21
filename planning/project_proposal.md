@@ -1,6 +1,6 @@
 # Project Proposal
 
-Pod Members: **Add Pod Members Names**
+Pod Members: **Nathan Q.- Kailey C. - Mabel I.M.**
 
 ## Problem Statement
 
