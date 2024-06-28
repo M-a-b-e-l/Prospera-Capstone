@@ -1,6 +1,6 @@
 # Project Proposal
 
-Pod Members: **Nathan Quiroa, Kailey Chavez, Mabel Inoa Mejia**
+Team MKNforce: **Nathan Quiroa, Kailey Chavez, and Mabel Inoa Mejia**
 
 <br>
 
