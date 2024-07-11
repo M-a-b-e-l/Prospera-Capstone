@@ -20,18 +20,18 @@ User Roles:
  
 <ins>**Young Adult** Personas:</ins>
 
-- Jake: Age: 22 | Location: Los Angeles, CA | Technology: Tech-savvy, primarily uses a smartphone, occasional laptop use | Motivation: Recently graduated, first job, wants to manage salary effectively, save for future goals 
+1. Jake: Age: 22 | Location: Los Angeles, CA | Technology: Tech-savvy, primarily uses a smartphone, occasional laptop use | Motivation: Recently graduated, first job, wants to manage salary effectively, save for future goals 
  - Pain Points: Struggles with budgeting and understanding investment options, saving for retirement 
 
-- Maria: Age: 19 | Location: Austin, TX | Technology: Moderate tech skills, mainly uses a smartphone | Motivation: College student with a part-time job, wants to budget for expenses and save for travel 
+2. Maria: Age: 19 | Location: Austin, TX | Technology: Moderate tech skills, mainly uses a smartphone | Motivation: College student with a part-time job, wants to budget for expenses and save for travel 
  - Pain Points: Finds it difficult to track spending and save money while balancing school and work 
 
 <ins>**Immigrant** Personas: </ins>
 
-Audrey: Age: 30 | Location: San Francisco, CA (originally from Mexico) | Technology: Comfortable with technology, uses both smartphone and laptop | Motivation: Recently moved for a job, needs to understand the US banking system, build credit, and manage remittances 
+1. Audrey: Age: 30 | Location: San Francisco, CA (originally from Mexico) | Technology: Comfortable with technology, uses both smartphone and laptop | Motivation: Recently moved for a job, needs to understand the US banking system, build credit, and manage remittances 
 - Pain Points: Confused by different financial practices and terminology, concerned about building credit 
 
-Cara: Age: 27 | Location: New York, NY (originally from Spain) Technology: Tech-savvy, primarily uses a smartphone Motivation: Graduate student, managing a tight budget, wants to save for emergencies and understand investment options 
+2. Cara: Age: 27 | Location: New York, NY (originally from Spain) Technology: Tech-savvy, primarily uses a smartphone Motivation: Graduate student, managing a tight budget, wants to save for emergencies and understand investment options 
 - Pain Points: Difficulty in understanding the financial system and finding reliable information in her native language. 
 
 ## User Stories
