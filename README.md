@@ -1,14 +1,12 @@
-📝 `NOTE` Use this template repo to initialize the contents of your group's capstone repo project. As you work on your assignment over the course of the week, update the appropriate repo deliverables. All project planning should be included in the planning directory. (🚫 Remove this paragraph before submitting your assignment.)
-
 # SITE Capstone Project
 
-SITE Course Year: **20__**
+SITE Course Year: 2024
 
-Cohort: **Add Company Sponsor Name**
+Cohort: **Salesforce**
 
-Team Member Names:**Insert Team Member Names**
+Team Member Names:**Nathan Quiroa, Kailey Chavez, Mabel Inoa Mejia**
 
-Mentors Names: **Insert Professional Mentor Names**
+Mentors Names: **Madhu Nama, Shreyas Diwan, Visheesh Jain**
 
 Project Code Repository Links
 
