@@ -6,7 +6,7 @@ Cohort: **Salesforce**
 
 Team Member Names: **Nathan Quiroa, Kailey Chavez, Mabel Inoa Mejia**
 
-Mentors Names: **Madhu Nama, Shreyas Diwan, Visheesh Jain**
+Mentors Names: **Madhu Nama, Shreyas Diwan, Vishesh Jain**
 
 Project Code Repository Links
 
