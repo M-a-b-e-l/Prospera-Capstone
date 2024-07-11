@@ -4,7 +4,7 @@ SITE Course Year: 2024
 
 Cohort: **Salesforce**
 
-Team Member Names:**Nathan Quiroa, Kailey Chavez, Mabel Inoa Mejia**
+Team Member Names: **Nathan Quiroa, Kailey Chavez, Mabel Inoa Mejia**
 
 Mentors Names: **Madhu Nama, Shreyas Diwan, Visheesh Jain**
 
