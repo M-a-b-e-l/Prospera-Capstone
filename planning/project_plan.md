@@ -117,11 +117,174 @@ User Roles:
 
 ## Pages/Screens
 
-List all the pages and screens in the app. Include wireframes for at least 3 of them.
+### <ins>Landing Page</ins>
+ - Main landing page
+ - About page
+ - Contact page
+ - Log in page
+ - Forgot password page
+ - Register page
+
+### <ins>Home Page (User Dashboard)</ins>
+ - Main home page
+ ![welcome in DASHBOARD](https://github.com/user-attachments/assets/7162e5bd-8ce6-43c9-b055-b86b11c276f4)
+ ![Mobile Dashboard Page](https://github.com/user-attachments/assets/5d0a9fd4-3e69-4450-813a-369b0a40f836)
+
+ - AI Chatbot page
+ ![Chatbot page](https://github.com/user-attachments/assets/c0871a1e-5452-4633-b7af-1c0ec71cd420)
+ ![Mobile Chatbot page](https://github.com/user-attachments/assets/f0b05a71-59e8-414b-a6e5-8bcce3c9c81f)
+ ![Mobile Chatbot page Modal](https://github.com/user-attachments/assets/b648376f-4abe-4a4f-bf6f-e881039e0fa0)
+
+ - Learn pages (see below)
+ - News pages (see below)
+ - Settings pages (see below)
+ - Notifications page
+
+### <ins>Settings Pages</ins>
+ - Main setting options page
+ - Viewing an individual setting page
+
+### <ins>News Pages</ins>
+ - News interests selection page
+ - Main news page
+ - Viewing an individual article page
+
+### <ins>Learn Pages</ins>
+ - Learning interests selection page
+   ![Learning interest selection (first-time visit)](https://github.com/user-attachments/assets/a02a00c7-f0e9-43ee-ad4c-4f41d21b97c4)
+   ![Mobile learning interest page](https://github.com/user-attachments/assets/7f8afdc1-3870-481f-b740-2734b8dcd389)
+
+ - Main learn page
+   ![Tailored learning page](https://github.com/user-attachments/assets/5ca3d5fb-a60f-464a-b8dc-3a2a749c2dce)
+   ![Mobile tailored learning page](https://github.com/user-attachments/assets/29858336-72c3-45ec-b04c-ec5b25d3a0b5)
+
+ - Viewing an individual resource (article or video) page
+   ![Article page](https://github.com/user-attachments/assets/c52ca6b6-ec25-4e23-a684-b426144a7eda)
+   ![Video page](https://github.com/user-attachments/assets/4e058082-1fae-4d1e-aa49-b1406f40aa37)
+   ![Mobile article page](https://github.com/user-attachments/assets/91e29288-61e9-4309-a80e-f216e659f8e5)
+   ![Mobile video page](https://github.com/user-attachments/assets/9661f623-ad35-454d-be1c-c62b9da540c4)
 
 ## Data Model
 
-Describe your app's data model using diagrams or tables
+### <ins>User Model</ins>
+
+| Field                   | Type                 | Attributes                    |
+|     :---:               |     :---:            |     :---:                     |
+| userId                  | Int                  | @id @default(autoincrement()) |
+| username                | String               | @unique                       |
+| avatarImage             | String               | @default(“”)                  |
+| password                | String               |                               |
+| email                   | String               | @unique                       |
+| firstName               | String               |                               |
+| lastName                | String               |                               |
+| location                | String               |                               |  
+| preferredLanguage       | String               |                               | 
+| createdAt               | DateTime             | @default(now())               |
+| updatedAt               | DateTime             | @updatedAt                    |
+| financialAccounts       | financialAccount[]   |                               |
+| financialGoals          | financialGoal[]      |                               |
+| chatbotInteractions     | chatbotInteraction[] |                               |
+
+### <ins>CurrencyEnum Model</ins>
+
+| Field                   | Type                 | Attributes                    |
+|     :---:               |     :---:            |     :---:                     |
+| USD                     | American Dollar      |                               |
+| ARS                     | Argentine Peso       |                               |
+| BOB                     | Bolivian Boliviano   |                               |
+| BRL                     | Brazilian Real       |                               |
+| CLP                     | Chilean Peso         |                               |
+| COP                     | Colombian Peso       |                               |
+| CRC                     | Costa Rican Colón    |                               |  
+| CUP                     | Cuban Peso           |                               |
+| DOP                     | Dominican Peso       |                               |
+| GTQ                     | Guatemalan Quetzal   |                               |
+| HNL                     | Honduran Lempira     |                               |
+| MXN                     | Mexican Peso         |                               |
+| NIO                     | Nicaraguan Córdoba   |                               |
+| PAB                     | Panamanian Balboa    |                               |
+
+### <ins>financialAccount Model</ins>
+
+| Field                   | Type                 | Attributes                                        |
+|     :---:               |     :---:            |     :---:                                         |
+| accountId               | Int                  | @id @default(autoincrement())                     |
+| userId                  | Int                  |                                                   |
+| accountName             | String               |                                                   |
+| accountType             | String               | @unique                                           |
+| balance                 | Float                |                                                   |
+| currency                | Currency             |                                                   |
+| createdAt               | DateTime             | @default(now())                                   |
+| updatedAt               | DateTime             | @updatedAt                                        |
+| user                    | User                 | @relation(fields: [userId], references: [userID]) |
+| Transactions            | Transaction[]        |                                                   | 
+
+### <ins>Transaction Model</ins>
+
+| Field                   | Type                 | Attributes                                              |
+|     :---:               |     :---:            |     :---:                                               |
+| transactionId           | Int                  | @id @default(autoincrement())                           |
+| accountId               | Int                  |                                                         |
+| transactionDate         | Date                 |                                                         |
+| amount                  | Float                |                                                         |
+| currency                | Currency             |                                                         |
+| category                | String?              | //optional                                              |
+| description             | String               |                                                         |
+| createdAt               | DateTime             | @default(now())                                         |
+| updatedAt               | DateTime             | @updatedAt                                              |
+| account                 | financialAccount     | @relation(fields: [accountId], references: [accountId]) |
+
+### <ins>financialGoal Model</ins>
+
+| Field                   | Type                 | Attributes                                        |
+|     :---:               |     :---:            |     :---:                                         |
+| goalId                  | Int                  | @id @default(autoincrement())                     |
+| userId                  | Int                  |                                                   |
+| goalName                | String               |                                                   |
+| targetAmount            | Float                |                                                   |
+| currentAccount          | Float                |                                                   |
+| currency                | Currency             |                                                   |
+| startDate               | Date                 |                                                   |
+| endDate                 | Date?                |                                                   |
+| progress                | Float                |                                                   |
+| createdAt               | DateTime             | @default(now())                                   |
+| updatedAt               | DateTime             | @updatedAt                                        |
+| user                    | User                 | @relation(fields: [userId], references: [userID]) |
+
+### <ins>chatbotInteraction Model</ins>
+
+| Field                   | Type                 | Attributes                                                        |
+|     :---:               |     :---:            |     :---:                                                         |
+| id                      | Int                  | @id @default(autoincrement())                                     |
+| conversationId          | Int                  |                                                                   |
+| userId                  | Int                  |                                                                   |
+| prompt                  | String               |                                                                   |
+| response                | String               |                                                                   |
+| createdAt               | DateTime             | @default(now())                                                   |
+| updatedAt               | DateTime             | @updatedAt                                                        |
+| user                    | User                 | @relation(fields: [userId], references: [userID])                 |
+| conversation            | Conversation         | @relation(fields: [conversationId], references: [conversationId]) |
+
+### <ins>Conversation Model</ins>
+
+| Field                   | Type                    | Attributes                                        |
+|     :---:               |     :---:               |     :---:                                         |
+| conversationId          | Int                     | @id @default(autoincrement())                     |
+| userId                  | Int                     |                                                   |
+| user                    | User                    | @relation(fields: [userId], references: [userID]) |
+| chatbotInteractions     | chatbotInteraction[]    |                                                   |
+
+### <ins>Article Model</ins>
+
+| Field                   | Type                 | Attributes                                        |
+|     :---:               |     :---:            |     :---:                                         |
+| title                   | String               |                                                   |
+| content                 | String               |                                                   |
+| type                    | String               |                                                   |
+| language                | String               |                                                   |
+| tags                    | String[]             |                                                   |
+| datePublished           | String               |                                                   |
+
 
 ## Endpoints
 
