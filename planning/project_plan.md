@@ -4,21 +4,21 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ## Problem Statement and Description
 
-Problem Statement: Managing finances can be challenging, especially for young adults transitioning into independence and immigrants adapting to a new financial landscape. Many lack the knowledge and tools needed to make informed financial decisions, leading to stress and potential financial hardship. Our web app aims to simplify and streamline personal finance management, providing users with the resources and guidance they need to achieve financial stability and growth.
+**Problem Statement**: Managing finances can be challenging, especially for young adults transitioning into independence and immigrants adapting to a new financial landscape. Many lack the knowledge and tools needed to make informed financial decisions, leading to stress and potential financial hardship. Our web app aims to simplify and streamline personal finance management, providing users with the resources and guidance they need to achieve financial stability and growth.
 
-Description: Prospera is a comprehensive app designed to help users take control of their financial health. By aggregating data from various financial apps and services into a single, customizable dashboard, the web app provides a clear overview of users' financial status and offers personalized insights and educational resources to enhance their financial literacy.
+**Description**: Prospera is a comprehensive app designed to help users take control of their financial health. By aggregating data from various financial apps and services into a single, customizable dashboard, the web app provides a clear overview of users' financial status and offers personalized insights and educational resources to enhance their financial literacy.
 
 ## User Roles and Personas
 
-User Roles:
+### <ins>User Roles</ins>
 
 **"Young Adult"**: A user transitioning to financial independence, seeking to build financial literacy and manage their personal finances effectively. 
 
 **"Immigrant"**: A user adapting to a new financial environment, looking for guidance and tools to understand and manage their finances in a new country. 
 
- Personas:
+### <ins>Personas</ins>
  
-<ins>**Young Adult** Personas:</ins>
+**Young Adult** Personas:
 
 1. Jake: Age: 22 | Location: Los Angeles, CA | Technology: Tech-savvy, primarily uses a smartphone, occasional laptop use | Motivation: Recently graduated, first job, wants to manage salary effectively, save for future goals 
  - Pain Points: Struggles with budgeting and understanding investment options, saving for retirement 
@@ -26,7 +26,7 @@ User Roles:
 2. Maria: Age: 19 | Location: Austin, TX | Technology: Moderate tech skills, mainly uses a smartphone | Motivation: College student with a part-time job, wants to budget for expenses and save for travel 
  - Pain Points: Finds it difficult to track spending and save money while balancing school and work 
 
-<ins>**Immigrant** Personas: </ins>
+**Immigrant** Personas:
 
 1. Audrey: Age: 30 | Location: San Francisco, CA (originally from Mexico) | Technology: Comfortable with technology, uses both smartphone and laptop | Motivation: Recently moved for a job, needs to understand the US banking system, build credit, and manage remittances 
 - Pain Points: Confused by different financial practices and terminology, concerned about building credit 
@@ -127,10 +127,26 @@ User Roles:
 
 ### <ins>Home Page (User Dashboard)</ins>
  - Main home page
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
  ![welcome in DASHBOARD](https://github.com/user-attachments/assets/7162e5bd-8ce6-43c9-b055-b86b11c276f4)
  ![Mobile Dashboard Page](https://github.com/user-attachments/assets/5d0a9fd4-3e69-4450-813a-369b0a40f836)
 
  - AI Chatbot page
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
  ![Chatbot page](https://github.com/user-attachments/assets/c0871a1e-5452-4633-b7af-1c0ec71cd420)
  ![Mobile Chatbot page](https://github.com/user-attachments/assets/f0b05a71-59e8-414b-a6e5-8bcce3c9c81f)
  ![Mobile Chatbot page Modal](https://github.com/user-attachments/assets/b648376f-4abe-4a4f-bf6f-e881039e0fa0)
@@ -151,14 +167,38 @@ User Roles:
 
 ### <ins>Learn Pages</ins>
  - Learning interests selection page
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
    ![Learning interest selection (first-time visit)](https://github.com/user-attachments/assets/a02a00c7-f0e9-43ee-ad4c-4f41d21b97c4)
    ![Mobile learning interest page](https://github.com/user-attachments/assets/7f8afdc1-3870-481f-b740-2734b8dcd389)
 
  - Main learn page
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
    ![Tailored learning page](https://github.com/user-attachments/assets/5ca3d5fb-a60f-464a-b8dc-3a2a749c2dce)
    ![Mobile tailored learning page](https://github.com/user-attachments/assets/29858336-72c3-45ec-b04c-ec5b25d3a0b5)
 
  - Viewing an individual resource (article or video) page
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
    ![Article page](https://github.com/user-attachments/assets/c52ca6b6-ec25-4e23-a684-b426144a7eda)
    ![Video page](https://github.com/user-attachments/assets/4e058082-1fae-4d1e-aa49-b1406f40aa37)
    ![Mobile article page](https://github.com/user-attachments/assets/91e29288-61e9-4309-a80e-f216e659f8e5)
