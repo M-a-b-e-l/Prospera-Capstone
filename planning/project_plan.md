@@ -125,6 +125,78 @@ Describe your app's data model using diagrams or tables
 
 ## Endpoints
 
-List the API endpoints you will need to implement.
+Yahoo Finance API Endpoints:
+- Stock information 
+```
+const options = {
+  method: 'POST',
+  url: 'https://yahoo-finance160.p.rapidapi.com/info',
+  headers: {
+    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
+    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
+    'Content-Type': 'application/json'
+  },
+  data: {stock: 'MSFT'}
+};
+```
+- Stock History
+```
+const options = {
+  method: 'POST',
+  url: 'https://yahoo-finance160.p.rapidapi.com/history',
+  headers: {
+    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
+    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
+    'Content-Type': 'application/json'
+  },
+  data: {
+    stock: 'TSLA',
+    period: '1mo'
+  }
+};
+```
+
+- Company news
+```
+const options = {
+  method: 'POST',
+  url: 'https://yahoo-finance160.p.rapidapi.com/stocknews',
+  headers: {
+    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
+    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
+    'Content-Type': 'application/json'
+  },
+  data: {stock: 'TSLA'}
+};
+```
+
+- Finance Chatbot
+```
+const options = {
+  method: 'POST',
+  url: 'https://yahoo-finance160.p.rapidapi.com/finbot',
+  headers: {
+    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
+    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
+    'Content-Type': 'application/json'
+  },
+  data: {
+    messages: [
+      {
+        role: 'user',
+        content: 'should i buy tesla'
+      }
+    ],
+    stock: 'TSLA',
+    conversation_id: '',
+    period: '1mo'
+  }
+};
+```
+
+OpenAI API Endpoints:
+```
+https://api.openai.com/v1/chat/completions
+```
 
 ***Don't forget to set up your Issues, Milestones, and Project Board!***
