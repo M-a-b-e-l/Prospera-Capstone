@@ -11,9 +11,11 @@ Prospera is a comprehensive app designed to help users take control of their fin
 ## User Roles and Personas
 
 "Young Adult": A user transitioning to financial independence, seeking to build financial literacy and manage their personal finances effectively. 
+
 "Immigrant": A user adapting to a new financial environment, looking for guidance and tools to understand and manage their finances in a new country. 
  
 <ins>Young Adult Personas:</ins>
+
 Jake: Age: 22 | Location: Los Angeles, CA | Technology: Tech-savvy, primarily uses a smartphone, occasional laptop use | Motivation: Recently graduated, first job, wants to manage salary effectively, save for future goals 
 - Pain Points: Struggles with budgeting and understanding investment options, saving for retirement 
 
@@ -21,6 +23,7 @@ Maria: Age: 19 | Location: Austin, TX | Technology: Moderate tech skills, mainly
 - Pain Points: Finds it difficult to track spending and save money while balancing school and work 
 
 <ins>Immigrant Personas: </ins>
+
 Audrey: Age: 30 | Location: San Francisco, CA (originally from Mexico) | Technology: Comfortable with technology, uses both smartphone and laptop | Motivation: Recently moved for a job, needs to understand the US banking system, build credit, and manage remittances 
 - Pain Points: Confused by different financial practices and terminology, concerned about building credit 
 
