@@ -4,15 +4,19 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ## Problem Statement and Description
 
-Managing finances can be challenging, especially for young adults transitioning into independence and immigrants adapting to a new financial landscape. Many lack the knowledge and tools needed to make informed financial decisions, leading to stress and potential financial hardship. Our web app aims to simplify and streamline personal finance management, providing users with the resources and guidance they need to achieve financial stability and growth.
+Problem Statement: Managing finances can be challenging, especially for young adults transitioning into independence and immigrants adapting to a new financial landscape. Many lack the knowledge and tools needed to make informed financial decisions, leading to stress and potential financial hardship. Our web app aims to simplify and streamline personal finance management, providing users with the resources and guidance they need to achieve financial stability and growth.
 
-Prospera is a comprehensive app designed to help users take control of their financial health. By aggregating data from various financial apps and services into a single, customizable dashboard, the web app provides a clear overview of users' financial status and offers personalized insights and educational resources to enhance their financial literacy.
+Description: Prospera is a comprehensive app designed to help users take control of their financial health. By aggregating data from various financial apps and services into a single, customizable dashboard, the web app provides a clear overview of users' financial status and offers personalized insights and educational resources to enhance their financial literacy.
 
 ## User Roles and Personas
+
+User Roles:
 
 "Young Adult": A user transitioning to financial independence, seeking to build financial literacy and manage their personal finances effectively. 
 
 "Immigrant": A user adapting to a new financial environment, looking for guidance and tools to understand and manage their finances in a new country. 
+
+ Personas:
  
 <ins>Young Adult Personas:</ins>
 
