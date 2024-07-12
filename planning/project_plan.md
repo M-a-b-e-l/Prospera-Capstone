@@ -352,5 +352,5 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 | Read   | GET       | **Read:** Retrieves details of a specific chatbot interaction. | 3, 9, 12     |
 
 ## Links
-**Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
-**Wireframing doc**: https://www.figma.com/design/QYHurxWp5pdvflm6o8PkwD/Prospera%3A-Your-Financial-Health-App?node-id=0-1&t=mrWerQH4GXw7jrRg-1
+ - **Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
+ - **Wireframing doc**: https://www.figma.com/design/QYHurxWp5pdvflm6o8PkwD/Prospera%3A-Your-Financial-Health-App?node-id=0-1&t=mrWerQH4GXw7jrRg-1
