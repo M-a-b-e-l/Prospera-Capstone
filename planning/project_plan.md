@@ -363,17 +363,16 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 **FinancialGoal Routes**
 | CRUD   | HTTP Verb | Description                                     | User Stories |
 | :---:  |  :---:    |     :---:                                       |     :---:    |
-| Create | POST      | Creates a new financial goal for a user.        | 2, 9, 14     |
-| Read   | GET       | Retrieves details of a specific financial goal. | 2, 9, 14     |
-| Update | PUT       | Updates details of a specific financial goal.   | 2, 9, 14     |
-| Delete | DELETE    | Deletes a specific financial goal.              | 2, 9, 14     |
+| Create | POST      | **Create:** Creates a new financial goal for a user.        | 2, 9, 14     |
+| Read   | GET       | **Read:** Retrieves details of a specific financial goal. | 2, 9, 14     |
+| Update | PUT       | **Update:** Updates details of a specific financial goal.   | 2, 9, 14     |
+| Delete | DELETE    | **Delete:** Deletes a specific financial goal.              | 2, 9, 14     |
 
 **ChatbotInteraction Routes**
 | CRUD   | HTTP Verb | Description                                          | User Stories |
 | :---:  |  :---:    |     :---:                                            |     :---:    |
-| Create | POST      | Records a new interaction with the chatbot.          | 3, 9, 12     |
-| Read   | GET       | Retrieves details of a specific chatbot interaction. | 3, 9, 12     |
-
+| Create | POST      | **Create:** Records a new interaction with the chatbot.          | 3, 9, 12     |
+| Read   | GET       | **Read:** Retrieves details of a specific chatbot interaction. | 3, 9, 12     |
 
 ## Links
 **Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
