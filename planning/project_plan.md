@@ -327,7 +327,7 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ### <ins>Yahoo Finance API + OpenAI API Endpoints</ins>
 | **CRUD** | **HTTP Verb** | **Description**                                                                                            | **User Stories** |
-|----------|---------------|------------------------------------------------------------------------------------------------------------|------------------|
+|     :---:               |     :---:            |     :---:                                         |     :---:                      |
 | Create   | POST          | **Read:** Retrieves detailed information about a specific stock.                                           | 8                |
 | Create   | POST          | **Read:** Retrieves historical data for a specific stock.                                                  | 8, 14            |
 | Create   | POST          | **Read:** Retrieves the latest news articles for a specific stock.                                         | 8, 12            |
@@ -337,6 +337,28 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 ### <ins>Our Database API endpoints</ins>
 
 **User Routes**
+| **CRUD** | **HTTP Verb** | **Description**                                     | **User Stories** |
+|     :---:               |     :---:            |     :---:                                         |     :---:                      |
+| Create   | POST          | **Create:** Creates a new user.                     | N/A              |
+| Read     | GET           | **Read:** Retrieves details of a specific user.     | N/A              |
+| Update   | PUT           | **Update:** Updates the details of a specific user. | N/A              |
+| Delete   | DELETE        | **Delete:** Deletes a specific user.                | N/A              |
+
+**FinancialAccount Routes**
+| **CRUD** | **HTTP Verb** | **Description**                                              | **User Stories** |
+|     :---:               |     :---:            |     :---:                                         |     :---:                      |
+| Create   | POST          | **Create:** Creates a new financial account for a user.      | 1, 4, 14         |
+| Read     | GET           | **Read:** Retrieves details of a specific financial account. | 1, 4, 14         |
+| Update   | PUT           | **Update:** Updates details of a specific financial account. | 1, 4             |
+| Delete   | DELETE        | **Delete:** Deletes a specific financial account.            | 1, 4             |
+
+**Transaction Routes**
+| **CRUD** | **HTTP Verb** | **Description**                                                         | **User Stories** |
+| :---:  |  :---:    |     :---:                                       |     :---:    |
+| Create   | POST          | **Create:** Creates a new transaction for a specific financial account. | 1, 4             |
+| Read     | GET           | **Read:** Retrieves details of a specific transaction.                  | 1, 4             |
+| Update   | PUT           | **Update:** Updates details of a specific transaction.                  | 1, 4             |
+| Delete   | DELETE        | **Delete:** Deletes a specific transaction.                             | 1, 4             |
 
 **FinancialGoal Routes**
 | CRUD   | HTTP Verb | Description                                     | User Stories |
