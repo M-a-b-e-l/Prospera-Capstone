@@ -256,22 +256,7 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 | createdAt               | DateTime             | @default(now())                                   | Timestamp when the financial account was created. |
 | updatedAt               | DateTime             | @updatedAt                                        | Timestamp when the financial account was last updated. |
 | user                    | User                 | @relation(fields: [userId], references: [userID]) | Reference to the user who owns the account. |
-| Transactions            | Transaction[]        |                                                   | List of transactions associated with the financial account. |
 
-### <ins>Transaction Model</ins>
-
-| Field                   | Type                 | Attributes                                              | Description                    |
-|     :---:               |     :---:            |     :---:                                               |      :---:                     |
-| transactionId           | Int                  | @id @default(autoincrement())                           | Unique identifier for the transaction, automatically incremented.  |
-| accountId               | Int                  |                                                         | Identifier for the financial account associated with the transaction.  |
-| transactionDate         | Date                 |                                                         | Date of the transaction.  |
-| amount                  | Float                |                                                         | Amount of money involved in the transaction.  |
-| currency                | Currency             |                                                         | Currency used in the transaction.  |
-| category                | String?              | //optional                                              | Category of the transaction (e.g., groceries, utilities). Optional.  |
-| description             | String               |                                                         | Description of the transaction.  |
-| createdAt               | DateTime             | @default(now())                                         | Timestamp when the transaction was created.  |
-| updatedAt               | DateTime             | @updatedAt                                              | Timestamp when the transaction was last updated.  |
-| account                 | financialAccount     | @relation(fields: [accountId], references: [accountId]) | Reference to the financial account associated with the transaction. |
 
 ### <ins>financialGoal Model</ins>
 
@@ -351,14 +336,6 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 | Read     | GET           | **Read:** Retrieves details of a specific financial account. | 1, 4, 14         |
 | Update   | PUT           | **Update:** Updates details of a specific financial account. | 1, 4             |
 | Delete   | DELETE        | **Delete:** Deletes a specific financial account.            | 1, 4             |
-
-**Transaction Routes**
-| **CRUD** | **HTTP Verb** | **Description**                                                         | **User Stories** |
-| :---:  |  :---:    |     :---:                                       |     :---:    |
-| Create   | POST          | **Create:** Creates a new transaction for a specific financial account. | 1, 4             |
-| Read     | GET           | **Read:** Retrieves details of a specific transaction.                  | 1, 4             |
-| Update   | PUT           | **Update:** Updates details of a specific transaction.                  | 1, 4             |
-| Delete   | DELETE        | **Delete:** Deletes a specific transaction.                             | 1, 4             |
 
 **FinancialGoal Routes**
 | CRUD   | HTTP Verb | Description                                     | User Stories |
