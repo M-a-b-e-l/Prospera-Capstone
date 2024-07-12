@@ -208,122 +208,119 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ### <ins>User Model</ins>
 
-| Field                   | Type                 | Attributes                    |
-|     :---:               |     :---:            |     :---:                     |
-| userId                  | Int                  | @id @default(autoincrement()) |
-| username                | String               | @unique                       |
-| avatarImage             | String               | @default(“”)                  |
-| password                | String               |                               |
-| email                   | String               | @unique                       |
-| firstName               | String               |                               |
-| lastName                | String               |                               |
-| location                | String               |                               |  
-| preferredLanguage       | String               |                               | 
-| createdAt               | DateTime             | @default(now())               |
-| updatedAt               | DateTime             | @updatedAt                    |
-| financialAccounts       | financialAccount[]   |                               |
-| financialGoals          | financialGoal[]      |                               |
-| chatbotInteractions     | chatbotInteraction[] |                               |
+| Field                   | Type                 | Attributes                    | Description                   |
+|     :---:               |     :---:            |     :---:                     |     :---:                     |
+| userId                  | Int                  | @id @default(autoincrement()) | Unique identifier for the user, automatically incremented. |
+| username                | String               | @unique                       | Unique username chosen by the user. |
+| avatarImage             | String               | @default(“”)                  | URL to the user's avatar image. Default is an empty string if not provided |
+| password                | String               |                               | User's password, stored securely (hashed). |
+| email                   | String               | @unique                       | Unique email address of the user. |
+| firstName               | String               |                               | User's first name. |
+| lastName                | String               |                               | User's last name. |
+| location                | String               |                               | User's location, which can be used for localized content. |
+| preferredLanguage       | String               |                               | User's preferred language for communication and content. |
+| createdAt               | DateTime             | @default(now())               | Timestamp when the user account was created. |
+| updatedAt               | DateTime             | @updatedAt                    | Timestamp when the user account was last updated. |
+| financialAccounts       | financialAccount[]   |                               | List of financial accounts associated with the user. |
+| financialGoals          | financialGoal[]      |                               | List of financial goals associated with the user. |
+| chatbotInteractions     | chatbotInteraction[] |                               | List of chatbot interactions associated with the user. |
 
 ### <ins>CurrencyEnum Model</ins>
 
-| Field                   | Type                 | Attributes                    |
-|     :---:               |     :---:            |     :---:                     |
-| USD                     | American Dollar      |                               |
-| ARS                     | Argentine Peso       |                               |
-| BOB                     | Bolivian Boliviano   |                               |
-| BRL                     | Brazilian Real       |                               |
-| CLP                     | Chilean Peso         |                               |
-| COP                     | Colombian Peso       |                               |
+| Field                   | Type                 | Attributes                    |               
+|     :---:               |     :---:            |     :---:                     |            
+| USD                     | American Dollar      |                               |                               
+| ARS                     | Argentine Peso       |                               |                              
+| BOB                     | Bolivian Boliviano   |                               |                               
+| BRL                     | Brazilian Real       |                               |                               
+| CLP                     | Chilean Peso         |                               |                               
+| COP                     | Colombian Peso       |                               |   
 | CRC                     | Costa Rican Colón    |                               |  
-| CUP                     | Cuban Peso           |                               |
-| DOP                     | Dominican Peso       |                               |
-| GTQ                     | Guatemalan Quetzal   |                               |
-| HNL                     | Honduran Lempira     |                               |
-| MXN                     | Mexican Peso         |                               |
-| NIO                     | Nicaraguan Córdoba   |                               |
-| PAB                     | Panamanian Balboa    |                               |
+| CUP                     | Cuban Peso           |                               | 
+| DOP                     | Dominican Peso       |                               | 
+| GTQ                     | Guatemalan Quetzal   |                               | 
+| HNL                     | Honduran Lempira     |                               | 
+| MXN                     | Mexican Peso         |                               | 
+| NIO                     | Nicaraguan Córdoba   |                               | 
+| PAB                     | Panamanian Balboa    |                               | 
 
 ### <ins>financialAccount Model</ins>
 
-| Field                   | Type                 | Attributes                                        |
-|     :---:               |     :---:            |     :---:                                         |
-| accountId               | Int                  | @id @default(autoincrement())                     |
-| userId                  | Int                  |                                                   |
-| accountName             | String               |                                                   |
-| accountType             | String               | @unique                                           |
-| balance                 | Float                |                                                   |
-| currency                | Currency             |                                                   |
-| createdAt               | DateTime             | @default(now())                                   |
-| updatedAt               | DateTime             | @updatedAt                                        |
-| user                    | User                 | @relation(fields: [userId], references: [userID]) |
-| Transactions            | Transaction[]        |                                                   | 
+| Field                   | Type                 | Attributes                                        | Description                    |
+|     :---:               |     :---:            |     :---:                                         |       :---:                    |
+| accountId               | Int                  | @id @default(autoincrement())                     | Unique identifier for the financial account, automatically incremented. |
+| accountName             | String               |                                                   | Name of the financial account (e.g., "Savings Account", "Checking Account"). |
+| accountType             | String               | @unique                                           | Type of the financial account (e.g., savings, checking). |
+| balance                 | Float                |                                                   | Current balance of the account. |
+| currency                | Currency             |                                                   | Currency used in the account (e.g., "USD", "ARS"). |
+| createdAt               | DateTime             | @default(now())                                   | Timestamp when the financial account was created. |
+| updatedAt               | DateTime             | @updatedAt                                        | Timestamp when the financial account was last updated. |
+| user                    | User                 | @relation(fields: [userId], references: [userID]) | Reference to the user who owns the account. |
+| Transactions            | Transaction[]        |                                                   | List of transactions associated with the financial account. |
 
 ### <ins>Transaction Model</ins>
 
-| Field                   | Type                 | Attributes                                              |
-|     :---:               |     :---:            |     :---:                                               |
-| transactionId           | Int                  | @id @default(autoincrement())                           |
-| accountId               | Int                  |                                                         |
-| transactionDate         | Date                 |                                                         |
-| amount                  | Float                |                                                         |
-| currency                | Currency             |                                                         |
-| category                | String?              | //optional                                              |
-| description             | String               |                                                         |
-| createdAt               | DateTime             | @default(now())                                         |
-| updatedAt               | DateTime             | @updatedAt                                              |
-| account                 | financialAccount     | @relation(fields: [accountId], references: [accountId]) |
+| Field                   | Type                 | Attributes                                              | Description                    |
+|     :---:               |     :---:            |     :---:                                               |      :---:                     |
+| transactionId           | Int                  | @id @default(autoincrement())                           | Unique identifier for the transaction, automatically incremented.  |
+| accountId               | Int                  |                                                         | Identifier for the financial account associated with the transaction.  |
+| transactionDate         | Date                 |                                                         | Date of the transaction.  |
+| amount                  | Float                |                                                         | Amount of money involved in the transaction.  |
+| currency                | Currency             |                                                         | Currency used in the transaction.  |
+| category                | String?              | //optional                                              | Category of the transaction (e.g., groceries, utilities). Optional.  |
+| description             | String               |                                                         | Description of the transaction.  |
+| createdAt               | DateTime             | @default(now())                                         | Timestamp when the transaction was created.  |
+| updatedAt               | DateTime             | @updatedAt                                              | Timestamp when the transaction was last updated.  |
+| account                 | financialAccount     | @relation(fields: [accountId], references: [accountId]) | Reference to the financial account associated with the transaction. |
 
 ### <ins>financialGoal Model</ins>
 
-| Field                   | Type                 | Attributes                                        |
-|     :---:               |     :---:            |     :---:                                         |
-| goalId                  | Int                  | @id @default(autoincrement())                     |
-| userId                  | Int                  |                                                   |
-| goalName                | String               |                                                   |
-| targetAmount            | Float                |                                                   |
-| currentAccount          | Float                |                                                   |
-| currency                | Currency             |                                                   |
-| startDate               | Date                 |                                                   |
-| endDate                 | Date?                |                                                   |
-| progress                | Float                |                                                   |
-| createdAt               | DateTime             | @default(now())                                   |
-| updatedAt               | DateTime             | @updatedAt                                        |
-| user                    | User                 | @relation(fields: [userId], references: [userID]) |
+| Field                   | Type                 | Attributes                                        | Description                    |
+|     :---:               |     :---:            |     :---:                                         |      :---:                     |
+| goalId                  | Int                  | @id @default(autoincrement())                     | Unique identifier for the financial goal, automatically incremented.  |
+| goalName                | String               |                                                   | Name of the financial goal (e.g., "Save for a car"). |
+| targetAmount            | Float                |                                                   | Target amount of money to be saved or invested for the goal. |
+| currentAccount          | Float                |                                                   | Current amount saved towards the goal.  |
+| currency                | Currency             |                                                   | Currency used for the financial goal. |
+| startDate               | Date                 |                                                   | Date when the goal was started.  |
+| endDate                 | Date?                |                                                   | Optional date when the goal should be achieved.  |
+| progress                | Float                |                                                   | Progress towards achieving the goal, typically a percentage.  |
+| createdAt               | DateTime             | @default(now())                                   | Timestamp when the financial goal was created.  |
+| updatedAt               | DateTime             | @updatedAt                                        | Timestamp when the financial goal was last updated.  |
+| user                    | User                 | @relation(fields: [userId], references: [userID]) | Reference to the user who set the goal.  |
 
 ### <ins>chatbotInteraction Model</ins>
 
-| Field                   | Type                 | Attributes                                                        |
-|     :---:               |     :---:            |     :---:                                                         |
-| id                      | Int                  | @id @default(autoincrement())                                     |
-| conversationId          | Int                  |                                                                   |
-| userId                  | Int                  |                                                                   |
-| prompt                  | String               |                                                                   |
-| response                | String               |                                                                   |
-| createdAt               | DateTime             | @default(now())                                                   |
-| updatedAt               | DateTime             | @updatedAt                                                        |
-| user                    | User                 | @relation(fields: [userId], references: [userID])                 |
-| conversation            | Conversation         | @relation(fields: [conversationId], references: [conversationId]) |
+| Field                   | Type                 | Attributes                                                        | Description                    |
+|     :---:               |     :---:            |     :---:                                                         |     :---:                      |
+| id                      | Int                  | @id @default(autoincrement())                                     | Unique identifier for the chatbot interaction, automatically incremented.  |
+| prompt                  | String               |                                                                   | User's input to the chatbot. |
+| response                | String               |                                                                   | Chatbot's response to the user's input. |
+| createdAt               | DateTime             | @default(now())                                                   | Timestamp when the interaction was created.  |
+| updatedAt               | DateTime             | @updatedAt                                                        | Timestamp when the interaction was last updated.   |
+| user                    | User                 | @relation(fields: [userId], references: [userID])                 | Reference to the user involved in the interaction.  |
+| conversation            | Conversation         | @relation(fields: [conversationId], references: [conversationId]) | Reference to the conversation the interaction is part of.  |
 
 ### <ins>Conversation Model</ins>
 
-| Field                   | Type                    | Attributes                                        |
-|     :---:               |     :---:               |     :---:                                         |
-| conversationId          | Int                     | @id @default(autoincrement())                     |
-| userId                  | Int                     |                                                   |
-| user                    | User                    | @relation(fields: [userId], references: [userID]) |
-| chatbotInteractions     | chatbotInteraction[]    |                                                   |
+| Field                   | Type                    | Attributes                                        | Description                    |
+|     :---:               |     :---:               |     :---:                                         |     :---:                      |
+| conversationId          | Int                     | @id @default(autoincrement())                     | Unique identifier for the conversation, automatically incremented.  |
+| userId                  | Int                     |                                                   | Identifier for the user involved in the conversation.  |
+| user                    | User                    | @relation(fields: [userId], references: [userID]) | Reference to the user involved in the conversation. |
+| chatbotInteractions     | chatbotInteraction[]    |                                                   | List of interactions associated with the conversation. |
 
 ### <ins>Article Model</ins>
 
-| Field                   | Type                 | Attributes                                        |
-|     :---:               |     :---:            |     :---:                                         |
-| title                   | String               |                                                   |
-| content                 | String               |                                                   |
-| type                    | String               |                                                   |
-| language                | String               |                                                   |
-| tags                    | String[]             |                                                   |
-| datePublished           | String               |                                                   |
+| Field                   | Type                 | Attributes                                        | Description                    |
+|     :---:               |     :---:            |     :---:                                         |     :---:                      |
+| resourceId              | String               |                                                   | Unique identifier for the educational resource, automatically incremented. |
+| title                   | String               |                                                   | Title of the educational resource.  |
+| content                 | String               |                                                   | Content of the educational resource.  |
+| type                    | String               |                                                   | Type of the educational resource (e.g., article, video).  |
+| language                | String               |                                                   | Language of the educational resource.  |
+| tags                    | String[]             |                                                   | Tags associated with the educational resource for categorization. |
+| datePublished           | String               |                                                   | Date when the resource was published.  |
 
 
 ## Endpoints
@@ -402,4 +399,6 @@ OpenAI API Endpoints:
 https://api.openai.com/v1/chat/completions
 ```
 
-***Don't forget to set up your Issues, Milestones, and Project Board!***
+## Links
+**Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
+**Wireframing doc**: https://www.figma.com/design/QYHurxWp5pdvflm6o8PkwD/Prospera%3A-Your-Financial-Health-App?node-id=0-1&t=mrWerQH4GXw7jrRg-1
