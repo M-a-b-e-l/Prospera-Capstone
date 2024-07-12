@@ -325,79 +325,19 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ## Endpoints
 
-Yahoo Finance API Endpoints:
-- Stock information 
-```
-const options = {
-  method: 'POST',
-  url: 'https://yahoo-finance160.p.rapidapi.com/info',
-  headers: {
-    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
-    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
-    'Content-Type': 'application/json'
-  },
-  data: {stock: 'MSFT'}
-};
-```
-- Stock History
-```
-const options = {
-  method: 'POST',
-  url: 'https://yahoo-finance160.p.rapidapi.com/history',
-  headers: {
-    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
-    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
-    'Content-Type': 'application/json'
-  },
-  data: {
-    stock: 'TSLA',
-    period: '1mo'
-  }
-};
-```
+Yahoo Finance API + OpenAI API Endpoints
+| **CRUD** | **HTTP Verb** | **Description**                                                                                            | **User Stories** |
+|----------|---------------|------------------------------------------------------------------------------------------------------------|------------------|
+| Create   | POST          | **Read:** Retrieves detailed information about a specific stock.                                           | 8                |
+| Create   | POST          | **Read:** Retrieves historical data for a specific stock.                                                  | 8, 14            |
+| Create   | POST          | **Read:** Retrieves the latest news articles for a specific stock.                                         | 8, 12            |
+| Create   | POST          | **Create/Read:** Interacts with a finance chatbot to get personalized advice and information about stocks. | 3, 9, 12         |
+| Create   | POST          | **Create/Read:** Interacts with a finance chatbot to get personalized advice and information about stocks. | 3, 10, 12        |
 
-- Company news
-```
-const options = {
-  method: 'POST',
-  url: 'https://yahoo-finance160.p.rapidapi.com/stocknews',
-  headers: {
-    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
-    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
-    'Content-Type': 'application/json'
-  },
-  data: {stock: 'TSLA'}
-};
-```
+Our Database API endpoints 
 
-- Finance Chatbot
-```
-const options = {
-  method: 'POST',
-  url: 'https://yahoo-finance160.p.rapidapi.com/finbot',
-  headers: {
-    'x-rapidapi-key': '4863f0126bmsh987d4b3dcf5d771p17b8f0jsn2aa945e6ccdd',
-    'x-rapidapi-host': 'yahoo-finance160.p.rapidapi.com',
-    'Content-Type': 'application/json'
-  },
-  data: {
-    messages: [
-      {
-        role: 'user',
-        content: 'should i buy tesla'
-      }
-    ],
-    stock: 'TSLA',
-    conversation_id: '',
-    period: '1mo'
-  }
-};
-```
+User Routes
 
-OpenAI API Endpoints:
-```
-https://api.openai.com/v1/chat/completions
-```
 
 ## Links
 **Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
