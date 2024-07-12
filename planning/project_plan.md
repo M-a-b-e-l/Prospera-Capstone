@@ -325,7 +325,7 @@ Pod Members: **Mabel I.M. - Kailey C. - Nathan Q.**
 
 ## Endpoints
 
-Yahoo Finance API + OpenAI API Endpoints
+### <ins>Yahoo Finance API + OpenAI API Endpoints</ins>
 | **CRUD** | **HTTP Verb** | **Description**                                                                                            | **User Stories** |
 |----------|---------------|------------------------------------------------------------------------------------------------------------|------------------|
 | Create   | POST          | **Read:** Retrieves detailed information about a specific stock.                                           | 8                |
@@ -334,9 +334,23 @@ Yahoo Finance API + OpenAI API Endpoints
 | Create   | POST          | **Create/Read:** Interacts with a finance chatbot to get personalized advice and information about stocks. | 3, 9, 12         |
 | Create   | POST          | **Create/Read:** Interacts with a finance chatbot to get personalized advice and information about stocks. | 3, 10, 12        |
 
-Our Database API endpoints 
+### <ins>Our Database API endpoints</ins>
 
-User Routes
+**User Routes**
+
+**FinancialGoal Routes**
+| CRUD   | HTTP Verb | Description                                     | User Stories |
+| :---:  |  :---:    |     :---:                                       |     :---:    |
+| Create | POST      | Creates a new financial goal for a user.        | 2, 9, 14     |
+| Read   | GET       | Retrieves details of a specific financial goal. | 2, 9, 14     |
+| Update | PUT       | Updates details of a specific financial goal.   | 2, 9, 14     |
+| Delete | DELETE    | Deletes a specific financial goal.              | 2, 9, 14     |
+
+**ChatbotInteraction Routes**
+| CRUD   | HTTP Verb | Description                                          | User Stories |
+| :---:  |  :---:    |     :---:                                            |     :---:    |
+| Create | POST      | Records a new interaction with the chatbot.          | 3, 9, 12     |
+| Read   | GET       | Retrieves details of a specific chatbot interaction. | 3, 9, 12     |
 
 
 ## Links
