@@ -23,3 +23,6 @@ The resources provided to us by our instructors were very helpful in allowing fo
 * Which features and user stories would you consider “at risk”? How will you change your plan if those items remain “at risk”?
 
 We haven't really identified any user stories/features that are "at risk"; we have almost completed all the features that we deem the most important, so no truly important features shoudl remain unfinished, which is what we're really hoping for. It may be possible that some of our stretch features may not be completed, but that is okay because we have identified them as nice to have, but not necessary for what our project is trying to achieve.
+
+## Links
+ - **Trello board**: https://trello.com/invite/b/TznPRHUh/ATTIa70300f6b4b7b37767e42b45285812853D670B6C/prospera-your-financial-health-hub
