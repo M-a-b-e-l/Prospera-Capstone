@@ -10,8 +10,8 @@ Mentors Names: **Madhu Nama, Shreyas Diwan, Vishesh Jain**
 
 Project Code Repository Links
 
-* [Frontend Repo Link]()
-* [Backend Repo Link]()
+* [Frontend Repo Link](https://github.com/Team-Nathan-Mabel-Kailey/prospera-frontend)
+* [Backend Repo Link](https://github.com/Team-Nathan-Mabel-Kailey/prospera-backend)
 
 ## Project Overview
 
