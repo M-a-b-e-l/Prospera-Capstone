@@ -12,6 +12,7 @@ Project Code Repository Links
 
 * [Frontend Repo Link](https://github.com/Team-Nathan-Mabel-Kailey/prospera-frontend)
 * [Backend Repo Link](https://github.com/Team-Nathan-Mabel-Kailey/prospera-backend)
+* Demo presentation link: https://www.canva.com/design/DAGNHaZmwCQ/gr1zURMTcOyc2ZYfAvXs6w/view?utm_content=DAGNHaZmwCQ&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 ## Project Overview
 
